@@ -8,15 +8,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
 html, body { width:100%; height:100%; background:#111; color:#f0f0f0; overflow:hidden; }
-.container { width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:flex-start; align-items:center; padding:40px; text-align:center; opacity:0; transition: opacity 0.8s ease-in-out; overflow-y:auto; }
-.visible { opacity:1; }
-h1 { font-size:3em; margin-bottom:10px; text-shadow: 2px 2px 8px #000; }
-h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
+.container { display:none; flex-direction:column; justify-content:flex-start; align-items:center; padding:40px; text-align:center; height:100vh; width:100vw; overflow-y:auto; transition: opacity 0.5s ease; opacity:0; }
+.container.visible { display:flex; opacity:1; }
+h1 { font-size:3em; margin-bottom:10px; text-shadow:2px2px8px #000; }
+h2 { font-size:2em; margin-bottom:15px; text-shadow:2px2px8px #000; }
 .text-content { max-width:900px; font-size:1.2em; line-height:1.8em; text-align:left; margin-bottom:20px; }
 .text-content p { margin-bottom:1.2em; }
-.next-btn { padding:12px 25px; background-color:#ff6b6b; border:none; border-radius:12px; color:#fff; font-size:1em; cursor:pointer; transition:0.3s; margin-top:10px; z-index:1; }
+.next-btn { padding:12px 25px; background-color:#ff6b6b; border:none; border-radius:12px; color:#fff; font-size:1em; cursor:pointer; transition:0.3s; margin-top:10px; }
 .next-btn:hover { background-color:#ff4b4b; }
-#secretMsg { display:none; font-style:italic; color:#ffdd57; margin-top:20px; }
+#secretMsg { display:none; font-style:italic; color:#ffdd57; margin-top:20px; padding:15px; background:#222; border-radius:12px; max-width:800px; text-align:center; }
 .footer { font-size:0.9em; opacity:0.6; text-align:center; margin-top:20px; }
 </style>
 </head>
@@ -28,8 +28,8 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
   <p style="font-size:1em; margin-bottom:20px; opacity:0.7;">Dibuat oleh Ahmad Shandi Saputra</p>
   <div class="text-content">
     <p>Perjalanan hatiku dimulai dari Desember, saat pertama kali kita mulai chat setiap hari. Awalnya hanya basa-basi, tapi lama-kelamaan setiap kata darimu terasa begitu hangat. Aku mulai menunggu chat darimu dengan antusiasme yang belum pernah kurasakan sebelumnya.</p>
-    <p>Setiap tawa kecilmu, candaan yang ringan, bahkan typo sederhana, terasa begitu spesial di mataku. Aku tersenyum sendiri tanpa sadar, menikmati setiap interaksi kecil yang kita punya.</p>
-    <p>Aku sadar, perasaan ini bukan sekadar suka biasa. Aku mulai jatuh cinta, perlahan tapi pasti. Hatiku berdebar tiap kali melihat notif chatmu.</p>
+    <p>Setiap tawa kecilmu, candaan yang ringan, bahkan typo sederhana, terasa begitu spesial di mataku. Aku tersenyum sendiri tanpa sadar, menikmati setiap interaksi kecil yang kita punya. Rasanya dunia menjadi lebih hangat karena kehadiranmu.</p>
+    <p>Aku sadar, perasaan ini bukan sekadar suka biasa. Aku mulai jatuh cinta, perlahan tapi pasti. Aku nggak bisa bohong, hatiku berdebar tiap kali melihat notif chatmu. Setiap “selamat pagi” darimu terasa istimewa, seakan dunia berhenti sebentar.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
   <button class="next-btn" onclick="nextPage()">Next</button>
@@ -41,7 +41,7 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
   <div class="text-content">
     <p>Semakin hari, aku sadar bahwa aku nggak bisa menahan perasaan ini. Setiap balasan darimu membuat jantungku berdebar kencang. Aku kadang cemburu pada hal-hal kecil, takut salah bicara, tapi semua itu wajar bagi cinta pertama.</p>
     <p>Obrolan kecil terasa sangat penting. Aku ingin selalu ada buat kamu, tapi aku juga belajar menahan diri supaya nggak terlihat memaksakan. Rasanya campur aduk, senang tapi juga khawatir.</p>
-    <p>Setiap malam, sebelum tidur, aku mengingat semua chat yang kita punya. Aku tersenyum, tapi juga kadang sedih karena menyadari bahwa perasaan ini nggak selalu mudah diungkapkan.</p>
+    <p>Setiap malam, sebelum tidur, aku mengingat semua chat yang kita punya. Aku tersenyum, tapi juga kadang sedih karena menyadari bahwa perasaan ini nggak selalu mudah diungkapkan. Aku menulis ini untuk mengabadikan semua detik yang berharga.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
   <button class="next-btn" onclick="nextPage()">Next</button>
@@ -53,7 +53,7 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
   <div class="text-content">
     <p>Tanggal 13 Maret, semuanya berubah. Kamu bilang kita harus jaga jarak. Aku terkejut, dan rasanya sakit. Aku nganggep kita lebih dari teman, tapi kamu melihat aku sebatas teman. Aku belajar menerima itu walau rasanya nggak mudah.</p>
     <p>Aku mulai menyadari bahwa jatuh cinta pertama nggak selalu mulus. Aku harus menahan diri dan belajar menghargai keputusanmu. Ini pengalaman baru, tapi aku percaya ada pelajaran berharga di balik rasa sakit ini.</p>
-    <p>Setiap kali aku memikirkan jarak itu, aku campur aduk: sedih, kecewa, tapi juga mulai belajar menghargai diriku sendiri dan memberi ruang pada orang lain.</p>
+    <p>Setiap kali aku memikirkan jarak itu, aku campur aduk: sedih, kecewa, tapi juga mulai belajar menghargai diriku sendiri dan memberi ruang pada orang lain. Aku menulis untuk menenangkan hati, menyimpan semua rasa yang muncul.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
   <button class="next-btn" onclick="nextPage()">Next</button>
@@ -77,7 +77,7 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
   <div class="text-content">
     <p>Melepas itu berat, tapi aku belajar tanpa membenci. Aku mencoba memahami bahwa cinta bukan soal memiliki, tapi menghargai perasaan orang lain. Aku mulai fokus pada diriku sendiri, impian dan kebahagiaanku.</p>
     <p>Setiap detik yang dulu terasa menyenangkan kini menjadi pelajaran berharga. Aku mulai menghargai diriku sendiri, belajar sabar, dan memahami bahwa semua perasaan itu wajar.</p>
-    <p>Aku percaya, perlahan rasa sakit ini akan berubah menjadi kekuatan. Aku akan lebih siap menghadapi cinta berikutnya dengan hati yang lebih dewasa.</p>
+    <p>Halaman ini jadi catatan penting untuk masa depan. Aku ingin mengingat bahwa mencintai diri sendiri sama pentingnya dengan mencintai orang lain.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
   <button class="next-btn" onclick="nextPage()">Next</button>
@@ -89,7 +89,7 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
   <div class="text-content">
     <p>Meskipun ada jarak, aku tetap menyimpan kenangan manis: tawa, candaan, dan perhatian kecilmu. Semua itu menjadi bagian berharga dari hatiku.</p>
     <p>Setiap interaksi kecil adalah pelajaran tentang bagaimana aku mencintai, bagaimana aku sakit, dan bagaimana aku bisa lebih bijak menghadapi cinta berikutnya.</p>
-    <p>Aku menulis ini supaya aku nggak lupa, dan supaya semua rasa yang pernah ada tetap dihargai. Kenangan manis ini akan selalu menjadi bagian dari perjalanan hidupku.</p>
+    <p>Halaman ini jadi catatan bahwa cinta pertama itu indah sekaligus berat, tapi tetap memiliki nilai yang tinggi.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
   <button class="next-btn" onclick="nextPage()">Next</button>
@@ -100,7 +100,7 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
   <h2>Pelajaran Hidup</h2>
   <div class="text-content">
     <p>Cinta pertama mengajarkanku banyak hal: kesabaran, pengendalian diri, menghargai perasaan sendiri, dan menerima kenyataan bahwa nggak semua cinta berakhir bahagia.</p>
-    <p>Buku ini menjadi saksi bahwa aku pernah jatuh cinta, pernah sakit, tapi juga pernah belajar banyak hal berharga. Setiap pengalaman ini membentukku menjadi lebih bijak dan lebih kuat.</p>
+    <p>Buku ini menjadi saksi bahwa aku pernah jatuh cinta, pernah sakit, tapi juga pernah belajar banyak hal berharga.</p>
     <p>Setiap kata yang kutulis adalah refleksi dari hatiku. Aku ingin bisa melihat kembali buku ini suatu hari nanti dan tersenyum, mengingat semua perjalanan tanpa menyesal.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
@@ -123,9 +123,9 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
 <div class="container" id="page9">
   <h2>Masa Depan</h2>
   <div class="text-content">
-    <p>Aku percaya bahwa setiap cinta membawa pelajaran. Cinta pertama ini mengajarkanku kesabaran, penghargaan, dan cinta pada diri sendiri. Aku siap menghadapi masa depan dengan hati lebih kuat dan lebih dewasa.</p>
-    <p>Buku ini jadi saksi bahwa aku pernah jatuh cinta, pernah sakit, tapi juga pernah belajar banyak hal berharga. Semua itu akan aku bawa selamanya.</p>
+    <p>Aku percaya bahwa setiap cinta membawa pelajaran. Cinta pertama ini mengajarkanku kesabaran, penghargaan, dan cinta pada diri sendiri.</p>
     <p>Aku menulis ini sebagai pengingat bahwa perjalanan hati itu berharga, dan setiap perasaan yang dirasakan punya nilai.</p>
+    <p>Halaman ini menegaskan bahwa cinta pertama membentuk karakter dan mempersiapkan kita menghadapi kehidupan yang lebih luas.</p>
   </div>
   <div class="footer">© Ahmad Shandi Saputra</div>
   <button class="next-btn" onclick="nextPage()">Next</button>
@@ -135,41 +135,53 @@ h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
 <div class="container" id="page10">
   <h2>Pesan Rahasia</h2>
   <div class="text-content">
-    <p>Di halaman terakhir ini, aku ingin meninggalkan pesan pribadi. Pesan yang hanya bisa diakses lewat tombol di bawah, sebagai pengingat bahwa hati kita berharga dan perlu dijaga.</p>
-    <button id="secretBtn" class="next-btn">Buka Pesan Rahasia</button>
-    <p id="secretMsg">
-      Bro, santai aja. Semua yang lo rasain wajar. Jangan bebanin diri sendiri. Perlahan lepas semua yang bikin lo berat, tapi tetap hargai perasaan itu. Lo bakal baik-baik aja, cuma perlu waktu dan kesabaran. Hati lo berharga.
-    </p>
+    <p>Di halaman terakhir ini, aku ingin meninggalkan pesan pribadi. Pesan ini hanya bisa diakses lewat tombol di bawah, sebagai pengingat bahwa hati kita berharga dan perlu dijaga.</p>
   </div>
+
+  <div style="margin-top:20px; width:100%; display:flex; justify-content:center; flex-direction:column; align-items:center;">
+    <button id="secretBtn" class="next-btn">Buka Pesan Rahasia</button>
+    <div id="secretMsg">
+      Bro, santai aja. Semua yang lo rasain wajar. Jangan bebanin diri sendiri. Perlahan lepas semua yang bikin lo berat, tapi tetap hargai perasaan itu. Lo bakal baik-baik aja, cuma perlu waktu dan kesabaran. Hati lo berharga.
+    </div>
+  </div>
+
   <div class="footer">© Ahmad Shandi Saputra</div>
 </div>
 
 <script>
 let currentPage = 1;
 const totalPages = 10;
-const pages = [];
-for(let i=1;i<=totalPages;i++){ pages.push(document.getElementById('page'+i)); }
 
-// Init: tampilkan page1, sembunyikan lainnya (opacity 0)
-pages.forEach((p,i)=>{ if(i!==0)p.style.opacity=0; });
-
-// Fungsi nextPage
 function nextPage(){
-  if(currentPage>=totalPages) return;
-  pages[currentPage-1].classList.remove('visible');
-  setTimeout(()=>{ pages[currentPage-1].style.opacity=0; },400);
-  pages[currentPage].style.opacity=1;
-  pages[currentPage].classList.add('visible');
+  const current = document.getElementById('page'+currentPage);
+  current.classList.remove('visible');
+  setTimeout(()=>{ current.style.display='none'; }, 300);
+
   currentPage++;
+  if(currentPage <= totalPages){
+    const next = document.getElementById('page'+currentPage);
+    next.style.display = 'flex';
+    setTimeout(()=>{ next.classList.add('visible'); },50);
+  }
 }
 
 // Pesan rahasia
-document.getElementById('secretBtn').addEventListener('click', function(){
-  const msg=document.getElementById('secretMsg');
-  if(msg.style.display==='none'){ msg.style.display='block'; this.innerText='Tutup Pesan Rahasia'; }
-  else{ msg.style.display='none'; this.innerText='Buka Pesan Rahasia'; }
+document.addEventListener('DOMContentLoaded', function(){
+  const secretBtn = document.getElementById('secretBtn');
+  const secretMsg = document.getElementById('secretMsg');
+
+  secretMsg.style.display = 'none'; // awalnya tersembunyi
+  secretBtn.addEventListener('click', function(){
+    if(secretMsg.style.display === 'none'){
+      secretMsg.style.display = 'block';
+      secretBtn.innerText = 'Tutup Pesan Rahasia';
+    } else {
+      secretMsg.style.display = 'none';
+      secretBtn.innerText = 'Buka Pesan Rahasia';
+    }
+  });
 });
 </script>
 
 </body>
-  </html>
+      </html>
