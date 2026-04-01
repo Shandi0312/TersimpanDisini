@@ -3,16 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privasi Hati (2026) - Ahmad Shandi</title>
+<title>Buku Privasi Hati - Ahmad Shandi</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif; }
 html, body { width:100%; height:100%; overflow:hidden; background:#111; color:#f0f0f0; }
-.container { width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:40px; text-align:center; overflow-y:auto; position:absolute; top:0; left:0; transition: transform 0.6s ease, opacity 0.6s ease; }
-.hidden-left { transform: translateX(-100%); opacity:0; }
-.hidden-right { transform: translateX(100%); opacity:0; }
-.visible { transform: translateX(0); opacity:1; }
+.container { width:100vw; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:40px; text-align:center; opacity:0; transition: opacity 0.8s ease-in-out; overflow-y:auto; }
+.visible { opacity:1; }
 h1 { font-size:3em; margin-bottom:10px; text-shadow: 2px 2px 8px #000; }
+h2 { font-size:2em; margin-bottom:15px; text-shadow: 2px 2px 8px #000; }
 .text-content { max-width:900px; font-size:1.2em; line-height:1.8em; text-align:left; margin-bottom:20px; }
 .text-content p { margin-bottom:1.2em; }
 .next-btn { padding:12px 25px; background-color:#ff6b6b; border:none; border-radius:12px; color:#fff; font-size:1em; cursor:pointer; transition:0.3s; margin-top:10px; }
@@ -23,190 +22,138 @@ h1 { font-size:3em; margin-bottom:10px; text-shadow: 2px 2px 8px #000; }
 </head>
 <body>
 
-<!-- Halaman 1 sampai 10 -->
 <!-- Halaman 1 -->
 <div class="container visible" id="page1">
-<h1>Privasi Hati (2026)</h1>
-<p style="font-size:1em; margin-bottom:20px; opacity:0.7;">Dibuat oleh Ahmad Shandi Saputra</p>
-<div class="text-content">
-<p>Perjalanan hatiku dimulai dari Desember, saat pertama kali kita mulai chat setiap hari. Awalnya hanya basa-basi, tapi setiap kata darimu terasa hangat. Aku mulai menunggu chat darimu dengan antusiasme yang belum pernah kurasakan sebelumnya.</p>
-<p>Setiap tawa kecilmu, candaan ringan, bahkan typo sederhana, terasa begitu spesial. Aku tersenyum sendiri tanpa sadar, menikmati setiap interaksi kecil yang kita punya. Rasanya dunia menjadi lebih hangat karena kehadiranmu.</p>
-<p>Aku sadar, perasaan ini bukan sekadar suka biasa. Aku mulai jatuh cinta, perlahan tapi pasti. Aku nggak bisa bohong, hatiku berdebar tiap kali melihat notif chatmu. Setiap “selamat pagi” darimu terasa istimewa, seakan dunia berhenti sebentar.</p>
-<p>Aku ingat satu malam ketika kita ngobrol sampai larut. Rasanya waktu berhenti, hanya ada kita dan layar HP. Setiap kata darimu membekas, dan aku merasa begitu dekat walau jarak memisahkan.</p>
-<p>Awal ini terasa ringan tapi istimewa. Aku ingin menyimpan semua kenangan ini, setiap kata, tawa, dan momen sederhana. Semua terasa nyata dan membuatku ingin selalu dekat denganmu.</p>
-<p>Menulis buku ini adalah caraku menghargai perasaan itu. Setiap paragraf adalah catatan hati yang ingin kuabadikan. Aku ingin mengingatnya selamanya, walau nanti mungkin rasanya akan berubah.</p>
-<p>Ada saat aku tersadar bahwa jatuh cinta pertama itu unik. Ada rasa senang, rindu, dan takut sekaligus. Semua emosi bercampur menjadi satu, tapi itu membuatku merasa hidup.</p>
-<p>Aku mencoba menafsirkan setiap chat, menulisnya di buku ini agar suatu hari kelak aku bisa kembali membaca dan mengingat semuanya.</p>
-<p>Perasaan ini membuatku lebih sensitif, lebih perhatian pada detail, dan lebih menghargai kehadiran orang lain. Setiap kata darimu adalah pelajaran tentang arti perhatian dan empati.</p>
-<p>Menutup halaman pertama ini, aku tersenyum sendiri, sadar bahwa perjalanan hati ini baru dimulai, tapi setiap detik sudah begitu berarti.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+  <h1>Buku Privasi Hati</h1>
+  <p style="font-size:1em; margin-bottom:20px; opacity:0.7;">Dibuat oleh Ahmad Shandi Saputra</p>
+  <div class="text-content">
+    <p>Perjalanan hatiku dimulai dari Desember, saat pertama kali kita mulai chat setiap hari. Awalnya hanya basa-basi, tapi lama-kelamaan setiap kata darimu terasa begitu hangat. Aku mulai menunggu chat darimu dengan antusiasme yang belum pernah kurasakan sebelumnya.</p>
+    <p>Setiap tawa kecilmu, candaan yang ringan, bahkan typo sederhana, terasa begitu spesial di mataku. Aku tersenyum sendiri tanpa sadar, menikmati setiap interaksi kecil yang kita punya. Rasanya dunia menjadi lebih hangat karena kehadiranmu.</p>
+    <p>Aku sadar, perasaan ini bukan sekadar suka biasa. Aku mulai jatuh cinta, perlahan tapi pasti. Aku nggak bisa bohong, hatiku berdebar tiap kali melihat notif chatmu. Setiap “selamat pagi” darimu terasa istimewa, seakan dunia berhenti sebentar.</p>
+    <p>Awal ini terasa ringan tapi istimewa. Aku ingin menyimpan semua kenangan ini, setiap kata, tawa, dan momen sederhana. Semua ini terasa nyata dan membuatku ingin selalu dekat denganmu.</p>
+    <p>Menulis buku ini adalah caraku menghargai perasaan itu. Aku ingin mencatat setiap detil, karena aku tahu cinta pertama begitu berharga. Aku ingin mengingatnya selamanya, walau nanti mungkin rasanya akan berubah.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 2 -->
-<div class="container hidden-right" id="page2">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Semakin hari, aku sadar bahwa aku nggak bisa menahan perasaan ini. Setiap balasan darimu membuat jantungku berdebar kencang. Aku kadang cemburu pada hal-hal kecil, takut salah bicara, tapi semua itu wajar bagi cinta pertama.</p>
-<p>Obrolan kecil terasa sangat penting. Aku ingin selalu ada buat kamu, tapi aku juga belajar menahan diri supaya nggak terlihat memaksakan. Rasanya campur aduk, senang tapi juga khawatir.</p>
-<p>Setiap malam, sebelum tidur, aku mengingat semua chat yang kita punya. Aku tersenyum, tapi juga kadang sedih karena menyadari bahwa perasaan ini nggak selalu mudah diungkapkan. Aku menulis ini untuk mengabadikan semua detik yang berharga.</p>
-<p>Refleksi ini membuatku sadar bahwa jatuh cinta pertama itu unik. Rasa itu nggak bisa dipaksakan, tapi harus dirasakan sepenuhnya. Setiap senyum, setiap kata, semuanya menjadi bagian dari perjalanan hatiku.</p>
-<p>Aku mulai menuliskan semua perasaan kecil yang muncul, dari rasa senang, rindu, takut, hingga cemas. Semua tercampur menjadi satu, tapi aku ingin mengingatnya.</p>
-<p>Hari-hari ini, aku belajar lebih banyak tentang kesabaran, tentang menunggu, dan menghargai proses yang ada. Cinta pertama bukan sekadar kata-kata, tapi pengalaman yang membentuk hati.</p>
-<p>Setiap kata yang kutulis di sini adalah saksi bahwa aku pernah merasakan cinta pertama dengan tulus dan sepenuh hati.</p>
-<p>Aku mulai memahami makna cinta, bukan sekadar memiliki, tapi juga menghargai dan memberi ruang. Semua pengalaman ini mengajariku tentang kedewasaan.</p>
-<p>Menutup halaman ini, aku menarik napas dalam-dalam, sadar bahwa perjalanan ini baru dimulai dan aku ingin menikmatinya sepenuh hati.</p>
-<p>Setiap perasaan yang kutulis adalah cara untuk tetap mengingat siapa aku dan siapa yang pernah membuat hatiku bergetar.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page2">
+  <h2>Perasaan Semakin Dalam</h2>
+  <div class="text-content">
+    <p>Semakin hari, aku sadar bahwa aku nggak bisa menahan perasaan ini. Setiap balasan darimu membuat jantungku berdebar kencang. Aku kadang cemburu pada hal-hal kecil, takut salah bicara, tapi semua itu wajar bagi cinta pertama.</p>
+    <p>Obrolan kecil terasa sangat penting. Aku ingin selalu ada buat kamu, tapi aku juga belajar menahan diri supaya nggak terlihat memaksakan. Rasanya campur aduk, senang tapi juga khawatir.</p>
+    <p>Setiap malam, sebelum tidur, aku mengingat semua chat yang kita punya. Aku tersenyum, tapi juga kadang sedih karena menyadari bahwa perasaan ini nggak selalu mudah diungkapkan. Aku menulis ini untuk mengabadikan semua detik yang berharga.</p>
+    <p>Refleksi ini membuatku sadar bahwa jatuh cinta pertama itu unik. Rasa itu nggak bisa dipaksakan, tapi harus dirasakan sepenuhnya. Setiap senyum, setiap kata, semuanya menjadi bagian dari perjalanan hatiku.</p>
+    <p>Halaman ini adalah catatan tentang bagaimana perasaan itu tumbuh, bagaimana aku belajar menghargai setiap interaksi, dan bagaimana cinta pertama bisa membawa begitu banyak emosi dalam satu waktu.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 3 -->
-<div class="container hidden-right" id="page3">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Aku mulai sadar, jatuh cinta pertama itu bukan tentang memiliki, tapi tentang merasakan setiap detik dengan penuh perhatian. Setiap chatmu adalah energi yang membuatku tersenyum dan sekaligus merenung.</p>
-<p>Terkadang aku merasa takut, takut kehilanganmu, takut salah langkah. Tapi rasa itu membuatku lebih hidup. Aku menulis semua ini untuk bisa mengenang setiap momen yang mungkin tidak akan terulang lagi.</p>
-<p>Hari-hari diisi dengan rindu yang tak terlihat. Aku belajar menahan diri, menunggu dengan sabar, tapi tetap ingin dekat. Semua ini terasa berat tapi juga indah.</p>
-<p>Aku mencatat semua detail kecil: cara tertawamu, gaya bicaramu, dan bahkan emoji yang kau kirim. Semua itu seperti potongan puzzle yang melengkapi hatiku.</p>
-<p>Setiap malam aku merenung tentang kita, tentang perasaan yang tak terucap. Aku ingin tetap menghargai dirimu tanpa menekan, tetap menjaga jarak yang sehat tapi hati tetap dekat.</p>
-<p>Mengalami cinta pertama membuatku lebih peka, lebih sabar, dan lebih menghargai momen kecil. Aku ingin mengingat semua ini dalam buku ini, sebagai saksi perasaan yang tulus.</p>
-<p>Halaman ini adalah refleksi tentang bagaimana cinta pertama bisa begitu kuat tanpa harus selalu terlihat. Ia tumbuh di hati dan membentuk siapa kita.</p>
-<p>Menulis setiap paragraf membuatku merasa lega. Aku bisa menyalurkan semua rindu dan kekhawatiran tanpa mengganggu hidupmu. Ini adalah caraku menjaga diri dan perasaan.</p>
-<p>Aku sadar, setiap detik yang kita lalui adalah pelajaran. Pelajaran tentang kesabaran, tentang menghargai, dan tentang bagaimana mencintai tanpa menuntut.</p>
-<p>Menutup halaman ini, aku tersenyum dan menarik napas panjang, sadar bahwa perjalanan hati ini masih panjang dan penuh cerita yang belum selesai.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page3">
+  <h2>Awal Sakit</h2>
+  <div class="text-content">
+    <p>Tanggal 13 Maret, semuanya berubah. Kamu bilang kita harus jaga jarak. Aku terkejut, dan rasanya sakit. Aku nganggep kita lebih dari teman, tapi kamu melihat aku sebatas teman. Aku belajar menerima itu walau rasanya nggak mudah.</p>
+    <p>Aku mulai menyadari bahwa jatuh cinta pertama nggak selalu mulus. Aku harus menahan diri dan belajar menghargai keputusanmu. Ini pengalaman baru, tapi aku percaya ada pelajaran berharga di balik rasa sakit ini.</p>
+    <p>Setiap kali aku memikirkan jarak itu, aku campur aduk: sedih, kecewa, tapi juga mulai belajar menghargai diriku sendiri dan memberi ruang pada orang lain. Aku menulis untuk menenangkan hati, menyimpan semua rasa yang muncul.</p>
+    <p>Halaman ini jadi pengingat bahwa kadang mencintai bukan tentang memiliki, tapi menghargai. Aku belajar bahwa perasaan itu wajar, dan sakit adalah bagian dari proses tumbuh dewasa.</p>
+    <p>Meski berat, aku mencoba melihat sisi positif. Aku punya waktu untuk diriku sendiri, untuk fokus pada hal-hal yang membuatku bahagia, dan untuk belajar mengendalikan emosiku.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 4 -->
-<div class="container hidden-right" id="page4">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Hari-hari terasa lebih berat ketika aku sadar jarak mulai memisahkan kita. Aku mencoba mengerti, tapi hatiku tetap rindu. Setiap chat yang sedikit terlambat membuatku gelisah, meski aku tahu aku harus sabar.</p>
-<p>Aku mulai merenung tentang semua momen yang sudah kita lalui. Mulai dari tawa kecil, candaan receh, sampai kata-kata serius yang kita bagi. Semua terasa begitu berharga dan tak tergantikan.</p>
-<p>Rasanya aneh ketika seseorang yang begitu dekat tiba-tiba menjadi jauh. Aku harus belajar menyesuaikan diri, menerima kenyataan, dan tetap menghargai perasaanmu.</p>
-<p>Aku menulis di buku ini agar aku bisa menyimpan semua kenangan itu, tidak hanya dalam ingatan tapi juga dalam kata-kata yang tertulis. Setiap paragraf adalah fragmen dari hatiku.</p>
-<p>Setiap malam, aku mengingat semua percakapan kita. Ada rasa senang bercampur rindu, dan kadang sedih. Semua itu mengajarkanku arti kesabaran dan kedewasaan dalam cinta pertama.</p>
-<p>Rindu ini membuatku lebih peka terhadap hal-hal kecil. Setiap emoji, setiap kata, menjadi penting. Aku belajar menghargai momen meski sederhana.</p>
-<p>Halaman ini adalah catatan tentang bagaimana hati bisa rindu tapi tetap menahan diri. Aku ingin mencatat semua rasa ini sebelum terlupakan.</p>
-<p>Aku sadar bahwa jatuh cinta pertama itu unik. Ada rasa takut, senang, cemas, dan rindu sekaligus. Semua itu bercampur jadi satu, membentuk pengalaman yang tak terlupakan.</p>
-<p>Menulis semua ini membuatku lega. Aku bisa menyalurkan perasaan tanpa mengganggu hidupmu. Ini caraku menghargai perasaan kita.</p>
-<p>Menutup halaman 4, aku tersenyum sendiri, menyadari bahwa cinta pertama mengajarkanku banyak hal yang tak bisa didapat dari pengalaman lain.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page4">
+  <h2>Refleksi Diri</h2>
+  <div class="text-content">
+    <p>Aku mulai banyak mikir tentang diriku sendiri. Apa yang salah? Apa yang bisa aku perbaiki? Tapi aku sadar, nggak semua hal harus diperbaiki. Aku cukup belajar dari perasaan ini.</p>
+    <p>Perasaan itu nggak salah, cara aku bereaksi mungkin belum matang. Aku belajar menghargai diri sendiri sebelum berharap orang lain menghargai perasaan kita. Buku ini jadi obat untuk hatiku, setiap kata terasa menenangkan.</p>
+    <p>Refleksi ini membuatku sadar bahwa jatuh cinta pertama bukan cuma soal dia, tapi juga soal aku belajar mengenal diri sendiri, mengenal batas, dan memahami rasa.</p>
+    <p>Aku juga belajar bahwa kesabaran itu penting. Aku mulai menerima bahwa tidak semua hal harus sempurna, dan bahwa cinta kadang datang untuk mengajarkan kita tentang ketulusan dan pengendalian diri.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 5 -->
-<div class="container hidden-right" id="page5">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Rasanya setiap detik semakin berharga. Aku menunggu chat darimu dengan antusiasme yang campur aduk. Senang, gelisah, rindu, semua bercampur menjadi satu. Ini pengalaman baru yang membuatku sadar betapa hidup bisa kompleks.</p>
-<p>Setiap kata darimu menjadi pelajaran tentang komunikasi dan perhatian. Aku belajar membaca pesanmu dengan hati, bukan hanya kata. Aku mulai menghargai setiap detail kecil yang sering dianggap remeh.</p>
-<p>Kadang aku ingin bilang semua perasaanku, tapi aku menahan diri. Aku ingin menghargai ruangmu, tapi juga ingin tetap dekat. Ini dilema yang membuatku sadar arti sabar dan menghargai proses.</p>
-<p>Setiap malam, aku menulis di buku ini agar bisa mengingat setiap perasaan. Aku ingin buku ini menjadi saksi perjalanan hati pertama yang tulus dan nyata.</p>
-<p>Rindu ini membuatku lebih sadar bahwa cinta pertama bukan sekadar kata, tapi pengalaman yang membentuk kita. Aku belajar menikmati proses, bukan hanya hasilnya.</p>
-<p>Menulis semua ini membuatku lebih lega. Aku bisa mengekspresikan semua perasaan tanpa mengganggu hidupmu. Ini adalah caraku menjaga hati sendiri sekaligus menghargai hatimu.</p>
-<p>Setiap chat, tawa, atau candaan yang kita bagi adalah kenangan yang ingin aku simpan. Aku sadar suatu hari nanti, semua ini akan menjadi nostalgia yang indah.</p>
-<p>Halaman ini adalah refleksi tentang kesabaran, rindu, dan pengalaman jatuh cinta pertama. Semua rasa tercatat di sini untuk dikenang selamanya.</p>
-<p>Aku menutup halaman ini dengan napas panjang, sadar bahwa jatuh cinta pertama adalah perjalanan hati yang unik, penuh warna, dan tak terlupakan.</p>
-<p>Setiap paragraf yang kutulis adalah bukti bahwa aku pernah merasakan cinta yang tulus, penuh perhatian, dan begitu menggetarkan hati.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page5">
+  <h2>Belajar Melepas</h2>
+  <div class="text-content">
+    <p>Melepas itu berat, tapi aku belajar tanpa membenci. Aku mencoba memahami bahwa cinta bukan soal memiliki, tapi menghargai perasaan orang lain. Aku mulai fokus pada diriku sendiri, impian dan kebahagiaanku.</p>
+    <p>Setiap detik yang dulu terasa menyenangkan kini menjadi pelajaran berharga. Aku mulai menghargai diriku sendiri, belajar sabar, dan memahami bahwa semua perasaan itu wajar.</p>
+    <p>Halaman ini jadi catatan penting untuk masa depan. Aku ingin mengingat bahwa mencintai diri sendiri sama pentingnya dengan mencintai orang lain. Semua pengalaman ini membuatku lebih bijak.</p>
+    <p>Aku percaya, perlahan rasa sakit ini akan berubah menjadi kekuatan. Aku akan lebih siap menghadapi cinta berikutnya dengan hati yang lebih dewasa.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 6 -->
-<div class="container hidden-right" id="page6">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Seiring waktu, aku mulai memahami bahwa jatuh cinta pertama itu bukan tentang memiliki, tapi tentang menghargai. Aku belajar memberi ruang dan waktu, meski hatiku ingin selalu dekat.</p>
-<p>Aku mulai mencatat momen-momen kecil: cara tertawa, gaya mengetik pesan, bahkan emoji favoritmu. Semua detail ini terasa penting dan membuatku semakin menghargai kehadiranmu.</p>
-<p>Kadang aku merasa cemas, takut salah langkah, atau terlalu menunjukkan perasaan. Tapi semua itu bagian dari proses belajar mencintai dengan tulus.</p>
-<p>Menulis di buku ini adalah caraku menenangkan diri. Aku bisa mengekspresikan rindu, gelisah, senang, dan cemas tanpa mengganggu hidupmu. Buku ini menjadi pelarian sekaligus refleksi hatiku.</p>
-<p>Hari-hari terasa penuh warna. Rindu, senang, takut, semua bercampur jadi satu. Aku sadar bahwa jatuh cinta pertama adalah campuran emosi yang membentuk pengalaman hidup yang unik.</p>
-<p>Halaman ini adalah catatan tentang bagaimana hati bisa rindu tapi tetap menghargai ruang. Aku belajar menyeimbangkan perasaan dan tindakan agar tidak berlebihan.</p>
-<p>Aku menutup halaman ini dengan tersenyum, sadar bahwa setiap detik yang kulalui dengan perasaan ini adalah pelajaran yang berharga.</p>
-<p>Setiap kata yang kutulis adalah saksi bahwa aku pernah merasakan cinta yang tulus dan nyata, yang mengajarkanku arti kesabaran dan penghargaan.</p>
-<p>Menulis membuatku lega. Aku bisa menyalurkan perasaan tanpa menimbulkan beban bagi dirimu. Ini caraku menjaga hati sendiri sekaligus menghargai perasaanmu.</p>
-<p>Menutup halaman ini, aku menarik napas panjang, siap melanjutkan perjalanan hati dengan penuh kesadaran dan rasa syukur.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page6">
+  <h2>Kenangan Manis</h2>
+  <div class="text-content">
+    <p>Meskipun ada jarak, aku tetap menyimpan kenangan manis: tawa, candaan, dan perhatian kecilmu. Semua itu menjadi bagian berharga dari hatiku. Aku ingin mengingat semua detil ini, bukan untuk berharap kembali, tapi untuk belajar dan menghargai.</p>
+    <p>Setiap interaksi kecil adalah pelajaran tentang bagaimana aku mencintai, bagaimana aku sakit, dan bagaimana aku bisa lebih bijak menghadapi cinta berikutnya. Aku ingin tersenyum mengenangnya di masa depan.</p>
+    <p>Aku menulis ini supaya aku nggak lupa, dan supaya semua rasa yang pernah ada tetap dihargai. Kenangan manis ini akan selalu menjadi bagian dari perjalanan hidupku.</p>
+    <p>Halaman ini jadi catatan bahwa cinta pertama itu indah sekaligus berat, tapi tetap memiliki nilai yang tinggi.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 7 -->
-<div class="container hidden-right" id="page7">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Setiap hari terasa berbeda. Kadang aku senang, kadang rindu, kadang cemas. Semua rasa bercampur, tapi itu membuatku belajar lebih banyak tentang diri sendiri dan perasaan.</p>
-<p>Aku mulai mencatat hal-hal kecil yang dulu tak kuperhatikan. Setiap chat, tawa, candaan, bahkan diam pun memiliki makna. Semua itu terasa spesial dan membuatku lebih peka terhadap perasaan orang lain.</p>
-<p>Rasa takut kadang muncul: takut salah bicara, takut terlalu menggebu, atau takut membuatmu risih. Tapi aku belajar menahan diri, menghargai ruangmu, dan tetap menghargai perasaan sendiri.</p>
-<p>Buku ini menjadi tempat pelampiasan sekaligus refleksi. Aku bisa menulis semua rindu, gelisah, senang, dan cemas tanpa mengganggu hidupmu. Setiap paragraf adalah fragmen hatiku.</p>
-<p>Hari-hari terasa lebih hidup. Aku belajar menikmati proses jatuh cinta pertama tanpa harus memaksakan apapun. Semua perasaan ini menjadi guru yang mengajarkanku kesabaran dan penghargaan.</p>
-<p>Halaman ini adalah catatan tentang bagaimana hati bisa rindu tapi tetap menghargai jarak. Aku belajar menyeimbangkan perasaan dan tindakan dengan bijak.</p>
-<p>Menulis membuatku lega. Aku bisa mengekspresikan rindu dan senang tanpa beban. Ini cara untuk menjaga hati dan menghargai hatimu.</p>
-<p>Setiap kata yang kutulis adalah bukti bahwa aku pernah merasakan cinta yang tulus, penuh perhatian, dan begitu menggetarkan hati.</p>
-<p>Menutup halaman ini, aku tersenyum, sadar bahwa jatuh cinta pertama itu unik dan tak terlupakan.</p>
-<p>Setiap paragraf adalah saksi perjalanan hati yang tulus dan penuh warna.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page7">
+  <h2>Pelajaran Hidup</h2>
+  <div class="text-content">
+    <p>Cinta pertama mengajarkanku banyak hal: kesabaran, pengendalian diri, menghargai perasaan sendiri, dan menerima kenyataan bahwa nggak semua cinta berakhir bahagia. Semua itu jadi bekal untuk aku tumbuh dewasa.</p>
+    <p>Buku ini menjadi saksi bahwa aku pernah jatuh cinta, pernah sakit, tapi juga pernah belajar banyak hal berharga. Setiap pengalaman ini membentukku menjadi lebih bijak dan lebih kuat.</p>
+    <p>Setiap kata yang kutulis adalah refleksi dari hatiku. Aku ingin bisa melihat kembali buku ini suatu hari nanti dan tersenyum, mengingat semua perjalanan tanpa menyesal.</p>
+    <p>Halaman ini menegaskan bahwa cinta pertama bukan sekadar rasa, tapi juga pelajaran tentang hidup dan bagaimana kita menghargai diri sendiri.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 8 -->
-<div class="container hidden-right" id="page8">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Rindu terasa berat, tapi aku belajar menahan diri. Aku mencatat semua momen, semua percakapan, semua tawa, semua senyum. Semua itu menjadi bagian dari hatiku yang tak ingin dilupakan.</p>
-<p>Setiap hari aku belajar lebih sabar dan lebih menghargai. Aku sadar bahwa cinta pertama bukan hanya tentang memiliki, tapi juga tentang menghormati perasaan orang lain dan diri sendiri.</p>
-<p>Menulis di buku ini menjadi cara untuk memahami diri sendiri. Aku bisa menyalurkan perasaan tanpa mengganggu hidupmu. Buku ini adalah teman dan saksi perjalanan hatiku.</p>
-<p>Hari-hari terasa lebih berwarna dengan perasaan yang campur aduk. Senang, rindu, cemas, semua menjadi bagian dari perjalanan hidup yang membuatku lebih dewasa.</p>
-<p>Aku mencatat detail kecil yang dulu tak kuperhatikan. Semua itu menjadi kenangan yang ingin kuabadikan. Setiap kata darimu menjadi penting, setiap tawa menjadi berharga.</p>
-<p>Halaman ini adalah refleksi tentang kesabaran, rindu, dan belajar menghargai. Aku sadar setiap perasaan adalah guru yang mengajarkanku lebih banyak tentang hidup dan cinta.</p>
-<p>Menulis membuatku lega dan tenang. Aku bisa mengekspresikan semua perasaan tanpa menimbulkan beban. Ini caraku menjaga hati sendiri dan menghargai hatimu.</p>
-<p>Setiap kata yang kutulis adalah bukti bahwa aku pernah merasakan cinta yang tulus dan penuh perhatian.</p>
-<p>Menutup halaman ini, aku tersenyum, sadar bahwa jatuh cinta pertama itu pengalaman unik yang membentuk siapa aku sekarang.</p>
-<p>Setiap paragraf menjadi saksi perjalanan hati yang tulus, penuh warna, dan tak terlupakan.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page8">
+  <h2>Harapan</h2>
+  <div class="text-content">
+    <p>Meskipun cinta pertama ini belum berakhir bahagia, aku tetap punya harapan. Aku harap aku bisa lebih kuat, lebih bijak, dan lebih menghargai perasaan orang lain serta diriku sendiri di masa depan.</p>
+    <p>Setiap pengalaman mengajarkanku untuk terus berkembang, menerima rasa sakit, dan tetap percaya bahwa kebahagiaan akan datang pada waktunya. Aku ingin percaya bahwa setiap rasa yang pernah ada membawa manfaat.</p>
+    <p>Halaman ini jadi catatan tentang harapan: bahwa masa depan bisa lebih baik, dan bahwa cinta berikutnya bisa datang dengan cara yang lebih matang dan bijaksana.</p>
+    <p>Aku menulis ini untuk mengingatkan diriku sendiri bahwa semua perasaan, baik senang atau sakit, tetap berharga dan menjadi bagian dari perjalanan hidupku.</p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
 
 <!-- Halaman 9 -->
-<div class="container hidden-right" id="page9">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Hari-hari terasa panjang tanpa kehadiranmu. Rindu ini kadang berat, tapi aku belajar menahan diri dan menghargai jarak. Semua itu membuatku lebih dewasa dan sabar.</p>
-<p>Menulis di buku ini adalah cara untuk menenangkan hati. Aku bisa menyalurkan semua rindu, gelisah, senang, dan cemas tanpa mengganggu hidupmu. Buku ini menjadi teman sekaligus saksi perjalanan hati.</p>
-<p>Setiap momen kecil kita terasa berharga. Setiap kata, setiap tawa, setiap emoji, semuanya menjadi bagian dari kenangan yang ingin aku simpan selamanya.</p>
-<p>Aku belajar menyeimbangkan perasaan dan tindakan. Rindu boleh ada, tapi aku harus tetap menghargai ruang dan waktu yang ada. Ini adalah pelajaran tentang cinta pertama yang tulus.</p>
-<p>Halaman ini adalah refleksi tentang bagaimana jatuh cinta pertama mengajarkan kesabaran, penghargaan, dan rasa syukur. Semua pengalaman ini membentuk hati yang lebih dewasa.</p>
-<p>Menulis membuatku lega. Aku bisa mengekspresikan perasaan tanpa beban, menjaga hati sendiri sekaligus menghargai hatimu. Ini cara untuk tetap dekat meski secara fisik jauh.</p>
-<p>Setiap paragraf yang kutulis adalah bukti bahwa aku pernah merasakan cinta yang tulus, mendalam, dan begitu menggetarkan hati. Pengalaman ini akan selalu aku kenang.</p>
-<p>Menutup halaman ini, aku tersenyum, sadar bahwa perjalanan cinta pertama ini penuh warna, pelajaran, dan kenangan yang tak terlupakan.</p>
-<p>Setiap kata yang kutulis adalah saksi perjalanan hati yang tulus, penuh perhatian, dan tak akan terlupakan.</p>
-<p>Halaman ini menutup refleksi tentang jatuh cinta pertama, siap menyambut halaman terakhir dengan pesan rahasia yang berharga.</p>
-</div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
-<button class="next-btn" onclick="nextPage()">Next</button>
+<div class="container" id="page9">
+  <h2>Masa Depan</h2>
+  <div class="text-content">
+    <p>Aku percaya bahwa setiap cinta membawa pelajaran. Cinta pertama ini mengajarkanku kesabaran, penghargaan, dan cinta pada diri sendiri. Aku siap menghadapi masa depan dengan hati lebih kuat dan lebih dewasa.</p>
+    <p>Buku ini jadi saksi bahwa aku pernah jatuh cinta, pernah sakit, tapi juga pernah belajar banyak hal berharga. Semua itu akan aku bawa selamanya.</p>
+    <p>Aku menulis ini sebagai pengingat bahwa perjalanan hati itu berharga, dan setiap perasaan yang dirasakan punya nilai. Aku siap melangkah ke masa depan dengan penuh keyakinan.</p>
+    <p>Halaman ini menegaskan bahwa cinta pertama membentuk karakter dan mempersiapkan kita menghadapi kehidupan yang lebih luas.</p>
   </div>
-  
-<!-- Halaman 10 -->
-<div class="container hidden-right" id="page10">
-<h1>Privasi Hati (2026)</h1>
-<div class="text-content">
-<p>Di halaman terakhir ini, aku ingin meninggalkan pesan pribadi. Pesan yang hanya bisa diakses lewat tombol di bawah, sebagai pengingat bahwa hati kita berharga dan perlu dijaga.</p>
-<button id="secretBtn" class="next-btn">Buka Pesan Rahasia</button>
-<p id="secretMsg">
-Bro, santai aja. Semua yang lo rasain wajar. Jangan bebanin diri sendiri. Perlahan lepas semua yang bikin lo berat, tapi tetap hargai perasaan itu. Lo bakal baik-baik aja, cuma perlu waktu dan kesabaran. Hati lo berharga.
-</p>
+  <div class="footer">© Ahmad Shandi Saputra</div>
+  <button class="next-btn" onclick="nextPage()">Next</button>
 </div>
-<div class="footer">© Ahmad Shandi Saputra 2026</div>
+
+<!-- Halaman 10 -->
+<div class="container" id="page10">
+  <h2>Pesan Rahasia</h2>
+  <div class="text-content">
+    <p>Di halaman terakhir ini, aku ingin meninggalkan pesan pribadi. Pesan yang hanya bisa diakses lewat tombol di bawah, sebagai pengingat bahwa hati kita berharga dan perlu dijaga.</p>
+    <button id="secretBtn" class="next-btn">Buka Pesan Rahasia</button>
+    <p id="secretMsg">
+      Bro, santai aja. Semua yang lo rasain wajar. Jangan bebanin diri sendiri. Perlahan lepas semua yang bikin lo berat, tapi tetap hargai perasaan itu. Lo bakal baik-baik aja, cuma perlu waktu dan kesabaran. Hati lo berharga.
+    </p>
+  </div>
+  <div class="footer">© Ahmad Shandi Saputra</div>
 </div>
 
 <script>
@@ -215,20 +162,17 @@ const totalPages = 10;
 
 function nextPage() {
   const current = document.getElementById('page'+currentPage);
-  const nextPageNum = currentPage + 1;
-  if(nextPageNum > totalPages) return;
-
-  const next = document.getElementById('page'+nextPageNum);
-
   current.classList.remove('visible');
-  current.classList.add('hidden-left');
-
-  next.classList.remove('hidden-right');
-  next.classList.add('visible');
-
+  setTimeout(()=>{ current.style.display='none'; }, 400);
   currentPage++;
+  if(currentPage <= totalPages){
+    const next = document.getElementById('page'+currentPage);
+    next.style.display='flex';
+    setTimeout(()=>{ next.classList.add('visible'); },50);
+  }
 }
 
+// Tombol pesan rahasia
 document.getElementById('secretBtn').addEventListener('click', function(){
   const msg = document.getElementById('secretMsg');
   if(msg.style.display === 'none'){
@@ -242,4 +186,4 @@ document.getElementById('secretBtn').addEventListener('click', function(){
 </script>
 
 </body>
-  </html>
+    </html>
