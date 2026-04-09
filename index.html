@@ -183,5 +183,19 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 </script>
 
+  <audio id="music" autoplay loop muted>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+window.addEventListener('load', () => {
+  const music = document.getElementById('music');
+  music.muted = false;
+  music.play().catch(() => {
+    document.body.addEventListener('click', () => music.play(), { once: true });
+  });
+});
+</script>
+
 </body>
       </html>
